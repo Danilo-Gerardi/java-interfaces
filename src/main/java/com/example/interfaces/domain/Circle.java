@@ -11,7 +11,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import java.util.UUID;
 
 @Getter
 @Setter
@@ -26,6 +25,6 @@ public class Circle implements Shape {
 
     @Override
     public Double getArea() {
-        return Math.PI * Math.pow(radius, 2);
+        return Math.PI * Math.pow(this.radius, 2);
     }
 }
